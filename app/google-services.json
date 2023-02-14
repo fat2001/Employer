@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "786839713018",
+    "project_id": "projetgenieinformatique-b1a71",
+    "storage_bucket": "projetgenieinformatique-b1a71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786839713018:android:1eaaadecf4179f252f0543",
+        "android_client_info": {
+          "package_name": "com.example.projetgenieinformatique"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "786839713018-7gpal4oh6rgnhkr6jpvgf1gnrhglgikj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx_dTq_Bh51n2e7c4r1FvfK9yZkzcBL3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "786839713018-7gpal4oh6rgnhkr6jpvgf1gnrhglgikj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
