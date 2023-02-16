@@ -28,10 +28,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Upload Data"
+            android:text="Importer les donnees"
             android:textSize="30sp"
             android:textAlignment="center"
-            android:textColor="@color/lavender"/>
+            android:textColor="@color/greenbg"/>
 
 
         <EditText
@@ -108,13 +108,14 @@
             android:padding="16dp"
             android:gravity="start|center_vertical"
             android:textColor="@color/lavender" />
+
         <ImageView
+            android:id="@+id/uploadImage"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/uploadimg"
-            android:id="@+id/uploadImage"
             android:layout_marginTop="10dp"
-            android:scaleType="fitXY"/>
+            android:scaleType="fitXY"
+            android:src="@drawable/uploadimg" />
 
         <Button
             android:layout_width="match_parent"

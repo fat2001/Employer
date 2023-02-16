@@ -5,16 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     tools:context=".First_Actiity">
 
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        app:srcCompat="@drawable/logo" />
-
+        android:layout_height="170dp"
+        android:layout_marginTop="90dp"
+        app:srcCompat="@drawable/logo_mobile" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_admin"

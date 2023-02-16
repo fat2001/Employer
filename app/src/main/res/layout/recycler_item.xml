@@ -11,53 +11,58 @@
     android:layout_marginVertical="10dp"
     app:cardCornerRadius="20dp"
     app:cardElevation="8dp">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/recImage"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:id="@+id/recImage"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
             android:padding="8dp"
             android:scaleType="centerCrop"
             android:src="@drawable/uploadimg"
-            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"/>
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
 
         <TextView
+            android:id="@+id/recTitle"
             android:layout_width="120dp"
             android:layout_height="30dp"
-            android:id="@+id/recTitle"
-            android:text="Title"
-            android:textColor="@color/lavender"
-            android:textSize="20sp"
-            android:layout_toEndOf="@id/recImage"
-            android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
-            />
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/recImage"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
         <TextView
+            android:id="@+id/recLieu"
             android:layout_width="100dp"
             android:layout_height="30dp"
-            android:id="@+id/recLieu"
-            android:text="Lieu"
-            android:layout_toEndOf="@id/recTitle"
-            android:layout_marginTop="20dp"
             android:layout_marginStart="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@id/recTitle"
+            android:text="Lieu"
             android:textAlignment="center"
-            android:textColor="@color/lavender"
-            android:textSize="16sp"/>
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
         <TextView
-            android:layout_width="140dp"
-            android:layout_height="wrap_content"
             android:id="@+id/recDesc"
-            android:text="Description"
-            android:textColor="@color/lavender"
-            android:textSize="14sp"
-            android:layout_toEndOf="@id/recImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_below="@id/recTitle"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toEndOf="@id/recImage"
             android:maxLines="1"
-            android:layout_marginBottom="12dp"/>
+            android:text="Description"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
 
 
     </RelativeLayout>

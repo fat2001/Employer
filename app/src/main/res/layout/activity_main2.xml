@@ -18,7 +18,7 @@
             android:layout_height="56dp"
             android:id="@+id/toolbar"
             android:elevation="4dp"
-            android:background="@color/lavender"
+            android:background="@color/grey"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
         <FrameLayout
@@ -33,7 +33,7 @@
         android:layout_gravity="start"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/nav_menu"
-        app:itemIconTint="@color/lavender"
-        app:itemTextColor="@color/lavender"/>
+        app:itemIconTint="@color/grey"
+        app:itemTextColor="@color/grey"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

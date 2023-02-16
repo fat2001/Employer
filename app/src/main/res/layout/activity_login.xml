@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center"
-        android:background="@drawable/pagebkg"
+        android:background="@drawable/bg"
         tools:context=".loginActivity">
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -20,7 +20,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_gravity="center_horizontal"
-                android:padding="24dp"
+                android:padding="28dp"
                 android:background="@drawable/lavender_border">
                 <TextView
                     android:layout_width="match_parent"
@@ -39,6 +39,7 @@
                     android:padding="8dp"
                     android:hint="Username"
                     android:drawableLeft="@drawable/ic_baseline_person_pin_24"
+
                     android:drawablePadding="8dp"
                     android:textColor="@color/black"/>
                 <EditText

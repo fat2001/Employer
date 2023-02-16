@@ -11,14 +11,13 @@ tools:context=".HomeFragment">
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/constraintLayout"
-    android:layout_marginTop="20dp">
+    android:layout_marginTop="0dp">
 
     <TextView
         android:id="@+id/dashboard"
-        android:layout_width="200dp"
-        android:layout_height="48dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Dashboard"
+        android:layout_width="206dp"
+        android:layout_height="54dp"
+        android:text=""
         android:textColor="@color/black"
         android:textSize="26sp"
         app:layout_constraintEnd_toStartOf="@+id/Image1"
@@ -34,16 +33,19 @@ tools:context=".HomeFragment">
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="16dp"
         app:layout_constraintStart_toEndOf="@id/dashboard"/>
+
     <TextView
+        android:id="@+id/ann1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ann1"
-        android:text="annonces"
-        android:textSize="20sp"
-        android:layout_marginStart="18dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="4dp"
+        android:text="Annonces"
         android:textColor="@color/lavender"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Image1"/>
+        app:layout_constraintTop_toBottomOf="@id/Image1" />
+
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="175dp"
@@ -69,6 +71,7 @@ tools:context=".HomeFragment">
             <RelativeLayout
                 android:id="@+id/activitesemain"
                 android:layout_width="match_parent"
+                android:background="#5F9EA0"
                 android:layout_height="157dp">
 
                 <TextView
@@ -77,12 +80,12 @@ tools:context=".HomeFragment">
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="31dp"
 
                     android:layout_marginTop="5dp"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:text="dernier Semaine"
-                    android:textColor="@color/lavender"
+                    android:layout_marginEnd="-26dp"
+                    android:text="Dernier Semaine"
+                    android:textColor="@color/white"
                     android:textSize="18sp" />
 
                 <TextView
@@ -91,10 +94,9 @@ tools:context=".HomeFragment">
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
                     android:layout_marginTop="40dp"
-                    android:fontFamily="@font/poppins_semibold"
                     android:text="42"
 
-                    android:textColor="@color/lavender"
+                    android:textColor="@color/white"
                     android:textSize="50sp" />
 
 
@@ -108,34 +110,35 @@ tools:context=".HomeFragment">
             android:layout_weight="1"
             app:cardElevation="20dp"
             app:cardCornerRadius="20dp">
+
             <RelativeLayout
+                android:id="@+id/R2_L1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/R2_L1">
+                android:background="#C4B454	"
+                android:layout_height="match_parent">
 
                 <TextView
                     android:id="@+id/jourann"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
-                    android:layout_marginStart="24dp"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginLeft="9dp"
                     android:layout_marginTop="5dp"
-                    android:fontFamily="@font/poppins_semibold"
                     android:text="Aujourd'huit"
-                    android:textColor="@color/lavender"
+                    android:textColor="@color/white"
                     android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/anncountj"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textAlignment="center"
                     android:layout_marginTop="40dp"
-                    android:fontFamily="@font/poppins_semibold"
                     android:text="16"
 
-                    android:textColor="@color/lavender"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/white"
                     android:textSize="50sp" />
 
             </RelativeLayout>
@@ -143,16 +146,18 @@ tools:context=".HomeFragment">
 
 
     </LinearLayout>
+
     <TextView
+        android:id="@+id/txtrap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txtrap"
-        android:text="rapports"
-        android:textSize="20sp"
-        android:layout_marginStart="18dp"
+        android:layout_marginStart="152dp"
+        android:text="Rapports"
         android:textColor="@color/lavender"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/row1"/>
+        app:layout_constraintTop_toBottomOf="@+id/row1" />
+
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="175dp"
@@ -177,6 +182,7 @@ tools:context=".HomeFragment">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="#5F8575	"
                 android:id="@+id/activite">
 
                 <TextView
@@ -187,20 +193,19 @@ tools:context=".HomeFragment">
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="48dp"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:text="dernier 7jours"
-                    android:textColor="@color/lavender"
+                    android:text="Dernier 7jours"
+                    android:textColor="@color/white"
                     android:textSize="18sp" />
+
                 <TextView
                     android:id="@+id/rapcount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
                     android:layout_marginTop="40dp"
-                    android:fontFamily="@font/poppins_semibold"
                     android:text="16"
 
-                    android:textColor="@color/lavender"
+                    android:textColor="@color/white"
                     android:textSize="50sp" />
 
 
@@ -217,6 +222,7 @@ tools:context=".HomeFragment">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="#8A9A5B	"
                 android:id="@+id/R2_L2">
 
                 <TextView
@@ -227,9 +233,8 @@ tools:context=".HomeFragment">
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="48dp"
-                    android:fontFamily="@font/poppins_semibold"
                     android:text="Aujourd'huit"
-                    android:textColor="@color/lavender"
+                    android:textColor="@color/white"
                     android:textSize="18sp" />
                 <TextView
                     android:id="@+id/rapcountj"
@@ -237,10 +242,9 @@ tools:context=".HomeFragment">
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
                     android:layout_marginTop="40dp"
-                    android:fontFamily="@font/poppins_semibold"
                     android:text="16"
 
-                    android:textColor="@color/lavender"
+                    android:textColor="@color/white"
                     android:textSize="50sp" />
 
 
@@ -275,10 +279,9 @@ tools:context=".HomeFragment">
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/pharmName5"
-                    android:text="total"
+                    android:text="Total"
                     android:textSize="35sp"
                     android:textColor="@color/lavender"
-                    android:fontFamily="@font/poppins_semibold"
                     android:layout_marginTop="5dp"
                     android:layout_centerHorizontal="true" />
 
@@ -288,26 +291,27 @@ tools:context=".HomeFragment">
                     android:layout_height="match_parent"
                     android:layout_marginTop="50dp"
                     android:padding="10dp">
+
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/CardL3_1"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:id="@+id/CardL3_1"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
-                        app:cardElevation="20dp"
-                        app:cardCornerRadius="20dp">
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="20dp">
+
                         <RelativeLayout
+                            android:id="@+id/R1_L3"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:id="@+id/R1_L3">
+                            android:layout_height="159dp">
+
                             <TextView
                                 android:id="@+id/txttoan"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:text="Annonces"
                                 android:textAlignment="center"
-                                android:layout_marginTop="0dp"
-                                android:fontFamily="@font/poppins_semibold"
-                                android:text="annonces"
 
                                 android:textColor="@color/lavender"
                                 android:textSize="20sp" />
@@ -316,59 +320,56 @@ tools:context=".HomeFragment">
                                 android:id="@+id/counttotalan"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:textAlignment="center"
                                 android:layout_marginTop="30dp"
-                                android:fontFamily="@font/poppins_semibold"
                                 android:text="16"
+                                android:textAlignment="center"
 
                                 android:textColor="@color/lavender"
                                 android:textSize="50sp" />
 
 
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/CardL3_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:id="@+id/R2_L3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tst"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:text="Rapports"
+                                android:textAlignment="center"
+
+                                android:textColor="@color/lavender"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/counttotalra"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="30dp"
+                                android:text="16"
+                                android:textAlignment="center"
+
+                                android:textColor="@color/lavender"
+                                android:textSize="50sp" />
+
 
                         </RelativeLayout>
                     </androidx.cardview.widget.CardView>
-                    <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:id="@+id/CardL3_2"
-
-                    android:layout_weight="1"
-
-                    app:cardCornerRadius="20dp">
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:id="@+id/R2_L3">
-                        <TextView
-                            android:id="@+id/tst"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textAlignment="center"
-                            android:layout_marginTop="0dp"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:text="rapports"
-
-                            android:textColor="@color/lavender"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:id="@+id/counttotalra"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textAlignment="center"
-                            android:layout_marginTop="30dp"
-                            android:fontFamily="@font/poppins_semibold"
-                            android:text="16"
-
-                            android:textColor="@color/lavender"
-                            android:textSize="50sp" />
-
-
-
-
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
 

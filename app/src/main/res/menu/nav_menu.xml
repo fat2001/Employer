@@ -9,14 +9,22 @@
             android:icon="@drawable/ic_baseline_home_24"
             android:title="Aceuil"/>
         <item
+            android:id="@+id/nav_Annonce"
+            android:icon="@drawable/annancebg"
+            android:title="Annonce"/>
+        <item
+            android:id="@+id/nav_Archive"
+            android:icon="@drawable/archivebg"
+            android:title="Archive"/>
+        <item
+            android:id="@+id/nav_Statistiques"
+            android:icon="@drawable/stats"
+            android:title="Statistiques"/>
+        <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/ic_baseline_settings_24"
             android:title="Paramétres"/>
 
-        <item
-            android:id="@+id/nav_about"
-            android:icon="@drawable/nav_about"
-            android:title="information"/>
     </group>
     <item
         android:title="">

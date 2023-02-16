@@ -12,6 +12,8 @@
     <color name="green">#00ff00</color>
     <color name="projet_button_g">#00DEA3</color>
     <color name="projet_back_bor">#BEF2E5</color>
+    <color name="greenbg">#00A77B</color>
+    <color name="grey">#B2BEB5</color>
 
 </resources>
 
