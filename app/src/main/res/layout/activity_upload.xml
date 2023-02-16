@@ -33,13 +33,7 @@
             android:textAlignment="center"
             android:textColor="@color/lavender"/>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:src="@drawable/uploadimg"
-            android:id="@+id/uploadImage"
-            android:layout_marginTop="10dp"
-            android:scaleType="fitXY"/>
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -114,11 +108,18 @@
             android:padding="16dp"
             android:gravity="start|center_vertical"
             android:textColor="@color/lavender" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/uploadimg"
+            android:id="@+id/uploadImage"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="Save"
+            android:text="Conformer"
             android:id="@+id/saveButton"
             android:textSize="18sp"
             android:layout_marginTop="20dp"
