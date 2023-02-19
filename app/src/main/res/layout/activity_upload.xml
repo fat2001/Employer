@@ -17,117 +17,118 @@
         app:cardCornerRadius="30dp"
         app:cardElevation="20dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center_horizontal"
-        android:padding="20dp"
-        android:background="@drawable/lavender_border">
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Importer les donnees"
-            android:textSize="30sp"
-            android:textAlignment="center"
-            android:textColor="@color/greenbg"/>
-
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:id="@+id/uploadTopic"
+            android:layout_gravity="center_horizontal"
             android:background="@drawable/lavender_border"
-            android:layout_marginTop="20dp"
-            android:padding="16dp"
-            android:hint="Enter topic name"
-            android:gravity="start|center_vertical"
-            android:textColor="@color/lavender"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:id="@+id/uploadDesc"
-            android:background="@drawable/lavender_border"
-            android:layout_marginTop="20dp"
-            android:padding="16dp"
-            android:hint="Enter description"
-            android:gravity="start|center_vertical"
-            android:textColor="@color/lavender"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:id="@+id/uploadLieu"
-            android:background="@drawable/lavender_border"
-            android:layout_marginTop="20dp"
-            android:padding="16dp"
-            android:hint="Enter le Lieu"
-            android:gravity="start|center_vertical"
-            android:textColor="@color/lavender"/>
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:id="@+id/spinner"
-            android:background="@drawable/lavender_border"
-            android:layout_marginTop="20dp"
-            android:padding="16dp"
-            android:gravity="start|center_vertical"
-            android:textColor="@color/lavender" />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@drawable/lavender_border"
-            android:layout_marginTop="20dp"
-            android:padding="16dp"
-            android:gravity="start|center_vertical"
-            android:textColor="@color/lavender"
-            android:id="@+id/editTextDate"
-            android:drawableStart="@drawable/ic_baseline_date_range_24"
-            android:hint="choisir une date"
-            />
+            android:orientation="vertical"
+            android:padding="20dp">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@drawable/lavender_border"
-            android:layout_marginTop="20dp"
-            android:padding="16dp"
-            android:gravity="start|center_vertical"
-            android:textColor="@color/lavender"
-            android:id="@+id/editTextTime"
-            android:drawableStart="@drawable/ic_baseline_access_time_24"
-            android:hint="choisir une heure"
-             />
-
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:id="@+id/service"
-            android:background="@drawable/lavender_border"
-            android:layout_marginTop="20dp"
-            android:padding="16dp"
-            android:gravity="start|center_vertical"
-            android:textColor="@color/lavender" />
-
-        <ImageView
-            android:id="@+id/uploadImage"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="10dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/uploadimg" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:text="Conformer"
-            android:id="@+id/saveButton"
-            android:textSize="18sp"
-            android:layout_marginTop="20dp"
-            app:cornerRadius = "20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Importer les donnees"
+                android:textAlignment="center"
+                android:textColor="@color/greenbg"
+                android:textSize="30sp" />
 
 
+            <EditText
+                android:id="@+id/uploadTopic"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:gravity="start|center_vertical"
+                android:hint="Enter topic name"
+                android:padding="16dp"
+                android:textColor="@color/lavender" />
 
-    </LinearLayout>
+            <EditText
+                android:id="@+id/uploadDesc"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:gravity="start|center_vertical"
+                android:hint="Enter description"
+                android:padding="16dp"
+                android:textColor="@color/lavender" />
+
+            <EditText
+                android:id="@+id/uploadLieu"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:gravity="start|center_vertical"
+                android:hint="Enter le Lieu"
+                android:padding="16dp"
+                android:textColor="@color/lavender" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:gravity="start|center_vertical"
+                android:padding="16dp"
+                android:textColor="@color/lavender" />
+
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:drawableStart="@drawable/ic_baseline_date_range_24"
+                android:gravity="start|center_vertical"
+                android:hint="choisir une date"
+                android:padding="16dp"
+                android:textColor="@color/lavender" />
+
+            <EditText
+                android:id="@+id/editTextTime"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:drawableStart="@drawable/ic_baseline_access_time_24"
+                android:gravity="start|center_vertical"
+                android:hint="choisir une heure"
+                android:padding="16dp"
+                android:textColor="@color/lavender" />
+
+            <Spinner
+                android:id="@+id/service"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:gravity="start|center_vertical"
+                android:padding="16dp"
+                android:textColor="@color/lavender" />
+
+            <ImageView
+                android:id="@+id/uploadImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/uploadimg" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:text="Conformer"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
+
+
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
 </ScrollView>
