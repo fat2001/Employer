@@ -1,5 +1,6 @@
 package com.example.searchprojet;
 
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.SearchView;
 
@@ -39,6 +41,12 @@ public class MainActivity extends AppCompatActivity {
         fab = findViewById(R.id.fab);
         /*searchView = findViewById(R.id.search);
         searchView.clearFocus();*/
+        Connecxion cn = new Connecxion();
+        //User user = new User("reda@gmail.com");
+       // user.setIdUser(12);
+      //  User user =  cn.Login("email@jadj.com","polplo")!=null?cn.Login("email@jadj.com","polplo"):new User();
+
+     //   Log.d("ddd",user.toString());
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(MainActivity.this, 1);
         recyclerView.setLayoutManager(gridLayoutManager);

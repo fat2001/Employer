@@ -1,6 +1,8 @@
 package com.example.searchprojet;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
     private int idUser;
     private String prenom;
     private String nom;
@@ -22,7 +24,10 @@ public class User {
         this.nomService = nomService;
         this.idRole = idRole;
     }
-
+    public  User (String email ){
+        this.email= email;
+    }
+    public  User(){}
     public int getIdUser() {
         return idUser;
     }
@@ -95,5 +100,18 @@ public class User {
         this.idRole = idRole;
     }
 
-
+    @Override
+    public String toString() {
+        return "User{" +
+                "idUser=" + idUser +
+                ", prenom='" + prenom + '\'' +
+                ", nom='" + nom + '\'' +
+                ", telephone=" + telephone +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", img='" + img + '\'' +
+                ", nomService='" + nomService + '\'' +
+                ", idRole=" + idRole +
+                '}';
+    }
 }

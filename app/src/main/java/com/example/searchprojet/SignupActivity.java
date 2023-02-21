@@ -33,6 +33,7 @@ public class SignupActivity extends AppCompatActivity {
         signupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                /*
                 database = FirebaseDatabase.getInstance();
                 reference = database.getReference("users");
                 String name = signupName.getText().toString();
@@ -44,6 +45,8 @@ public class SignupActivity extends AppCompatActivity {
                 Toast.makeText(SignupActivity.this, "You have signup successfully!", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(SignupActivity.this,loginActivity.class);
                 startActivity(intent);
+                
+                 */
             }
         });
         loginRedirectText.setOnClickListener(new View.OnClickListener() {

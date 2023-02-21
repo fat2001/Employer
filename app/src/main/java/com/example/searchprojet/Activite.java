@@ -26,6 +26,12 @@ public class Activite {
         this.idCategorie = idCategorie;
     }
 
+    public Activite(String date, String sujet, String lieu) {
+        this.date = date;
+        this.sujet = sujet;
+        this.lieu = lieu;
+    }
+
     public int getIdActivite() {
         return idActivite;
     }
@@ -104,5 +110,21 @@ public class Activite {
 
     public void setIdCategorie(int idCategorie) {
         this.idCategorie = idCategorie;
+    }
+
+    @Override
+    public String toString() {
+        return "Activite{" +
+                "idActivite=" + idActivite +
+                ", nomActivite='" + nomActivite + '\'' +
+                ", date='" + date + '\'' +
+                ", heur='" + heur + '\'' +
+                ", sujet='" + sujet + '\'' +
+                ", lieu='" + lieu + '\'' +
+                ", img='" + img + '\'' +
+                ", pdf='" + pdf + '\'' +
+                ", idUser=" + idUser +
+                ", idCategorie=" + idCategorie +
+                '}';
     }
 }
