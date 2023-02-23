@@ -1,36 +1,59 @@
 package com.example.searchprojet;
 
+
 import java.io.Serializable;
 
 public class User implements Serializable {
-    private int idUser;
+    private static int idUser;
     private String prenom;
     private String nom;
     private int telephone;
     private String email;
     private String password;
     private String img;
-    private String nomService;
-    private int idRole;
+    String service;
 
-    public User(int idUser, String prenom, String nom, int telephone, String email, String password, String img, String nomService, int idRole) {
-        this.idUser = idUser;
+    private int idRole;
+    public  User(){}
+    public  User (String email ){
+        this.email= email;
+    }
+
+    public int getIdUser() {
+        return idUser;
+    }
+
+    public User( String prenom, String nom, int telephone, String email, String password, String img, int idRole) {
+        idUser++;
         this.prenom = prenom;
         this.nom = nom;
         this.telephone = telephone;
         this.email = email;
         this.password = password;
         this.img = img;
-        this.nomService = nomService;
         this.idRole = idRole;
+
     }
-    public  User (String email ){
-        this.email= email;
+
+
+    public User( String prenom, String nom, int telephone, String email, String password) {
+        idUser++;
+        this.prenom = prenom;
+        this.nom = nom;
+        this.telephone = telephone;
+        this.email = email;
+        this.password = password;
+
+
     }
-    public  User(){}
-    public int getIdUser() {
-        return idUser;
+
+    public User(String email,String password){
+        idUser++;
+        this.email = email;
+        this.password = password;
+        this.idRole = 3;
     }
+
 
     public void setIdUser(int idUser) {
         this.idUser = idUser;
@@ -84,13 +107,6 @@ public class User implements Serializable {
         this.img = pImg;
     }
 
-    public String getNomService() {
-        return nomService;
-    }
-
-    public void setNomService(String nomService) {
-        this.nomService = nomService;
-    }
 
     public int getIdRole() {
         return idRole;
@@ -100,18 +116,26 @@ public class User implements Serializable {
         this.idRole = idRole;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "idUser=" + idUser +
-                ", prenom='" + prenom + '\'' +
-                ", nom='" + nom + '\'' +
-                ", telephone=" + telephone +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                ", img='" + img + '\'' +
-                ", nomService='" + nomService + '\'' +
-                ", idRole=" + idRole +
-                '}';
+    public void adduser(String email,String pass){
+
     }
-}
+
+
+
+
+@Override
+public String toString() {
+        return "User{" +
+        "idUser=" + idUser +
+        ", prenom='" + prenom + '\'' +
+        ", nom='" + nom + '\'' +
+        ", telephone=" + telephone +
+        ", email='" + email + '\'' +
+        ", password='" + password + '\'' +
+        ", img='" + img + '\'' +
+        ", nomService='" + service + '\'' +
+        ", idRole=" + idRole +
+        '}';
+        }
+
+        }

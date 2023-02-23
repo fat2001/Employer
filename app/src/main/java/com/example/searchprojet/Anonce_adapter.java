@@ -1,6 +1,7 @@
 package com.example.searchprojet;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,6 +34,15 @@ public class Anonce_adapter extends RecyclerView.Adapter<Anonce_adapter.ViewHold
         holder.txt_sujet.setText(activite.getSujet());
         holder.txt_addresse.setText(activite.getLieu());
         holder.txt_date.setText(activite.getDate());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context,DetailActivity.class);
+                intent.putExtra("Activite",list.get(holder.getAdapterPosition()));
+                context.startActivity(intent);
+
+            }
+        });
 
 
     }

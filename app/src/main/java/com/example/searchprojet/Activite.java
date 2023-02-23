@@ -1,11 +1,16 @@
 package com.example.searchprojet;
 
 
-public class Activite {
-    private int idActivite;
-    private String nomActivite;
+import android.app.DatePickerDialog;
+
+import java.io.Serializable;
+
+public class Activite implements Serializable {
+    public static int idActivite;
+    private String desc;
     private String date;
-    private String heur;
+    private String heure;
+
     private String sujet;
     private String lieu;
     private String img;
@@ -13,11 +18,11 @@ public class Activite {
     private int idUser;
     private int idCategorie;
 
-    public Activite(int idActivite, String nomActivite, String date, String heur, String sujet, String lieu, String img, String pdf, int idUser, int idCategorie) {
-        this.idActivite = idActivite;
-        this.nomActivite = nomActivite;
+    public Activite(int idActivite, String desc, String date, String sujet,String heur, String lieu, String img, String pdf, int idUser, int idCategorie) {
+        idActivite++;
+        this.desc = desc;
         this.date = date;
-        this.heur = heur;
+        this.heure = heur;
         this.sujet = sujet;
         this.lieu = lieu;
         this.img = img;
@@ -26,11 +31,28 @@ public class Activite {
         this.idCategorie = idCategorie;
     }
 
-    public Activite(String date, String sujet, String lieu) {
+    public Activite(String date, String sujet, String lieu, String imageURL) {
+        idActivite++;
         this.date = date;
         this.sujet = sujet;
         this.lieu = lieu;
     }
+    public Activite(String date, String sujet, String lieu) {
+        idActivite++;
+        this.date = date;
+        this.sujet = sujet;
+        this.lieu = lieu;
+    }
+
+    public Activite(String date,String heur, String sujet, String lieu,String descr,String img) {
+        idActivite++;
+        this.date = date;
+        this.heure = heur;
+        this.sujet = sujet;
+        this.lieu = lieu;
+        this.img = img;
+    }
+
 
     public int getIdActivite() {
         return idActivite;
@@ -40,12 +62,12 @@ public class Activite {
         this.idActivite = idActivite;
     }
 
-    public String getNomActivite() {
-        return nomActivite;
+    public String getDesc() {
+        return desc;
     }
 
-    public void setNomActivite(String nomActivite) {
-        this.nomActivite = nomActivite;
+    public void setNomDesc(String Desc) {
+        this.desc = Desc;
     }
 
     public String getDate() {
@@ -56,14 +78,14 @@ public class Activite {
         this.date = date;
     }
 
-    public String getHeur() {
+  /*  public String getHeur() {
         return heur;
     }
 
     public void setHeur(String heur) {
         this.heur = heur;
     }
-
+*/
     public String getSujet() {
         return sujet;
     }
@@ -116,9 +138,9 @@ public class Activite {
     public String toString() {
         return "Activite{" +
                 "idActivite=" + idActivite +
-                ", nomActivite='" + nomActivite + '\'' +
+                ", nomActivite='" + desc + '\'' +
                 ", date='" + date + '\'' +
-                ", heur='" + heur + '\'' +
+         //       ", heur='" + heur + '\'' +
                 ", sujet='" + sujet + '\'' +
                 ", lieu='" + lieu + '\'' +
                 ", img='" + img + '\'' +

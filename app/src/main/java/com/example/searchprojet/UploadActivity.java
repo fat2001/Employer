@@ -16,6 +16,7 @@ import android.content.Intent;
 import android.icu.text.DateFormat;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -93,7 +94,7 @@ public class UploadActivity extends AppCompatActivity implements TimePickerDialo
 
             uploadImage = findViewById(R.id.uploadImage);
         uploadDesc = findViewById(R.id.uploadDesc);
-        uploadTopic = findViewById(R.id.uploadTopic);
+        uploadTopic = findViewById(R.id.uploadsujet);
         uploadLieu = findViewById(R.id.uploadLieu);
         saveButton = findViewById(R.id.saveButton);
 
@@ -124,7 +125,8 @@ public class UploadActivity extends AppCompatActivity implements TimePickerDialo
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                saveData();
+                uploadData();
+             //   saveData();
             }
         });
     }
@@ -154,13 +156,17 @@ public class UploadActivity extends AppCompatActivity implements TimePickerDialo
         });
     }
     public void uploadData(){
-        String title = uploadTopic.getText().toString();
+        String sujet = uploadTopic.getText().toString();
         String desc = uploadDesc.getText().toString();
         String lang = uploadLieu.getText().toString();
-        DataClass dataClass = new DataClass(title, desc, lang, imageURL);
+        DataClass dataClass = new DataClass(sujet, desc, lang, imageURL);
+        Activite act1 = new Activite(edittextDate.getText().toString(),editTextTime.getText().toString(),sujet,lang,desc,imageURL);
+        Log.d("sssss",act1.toString());
+        Connecxion connecxion = new Connecxion();
+        connecxion.addActivite(14,act1);
 
 
-        FirebaseDatabase.getInstance().getReference("Mes activites").child(title)
+      /*  FirebaseDatabase.getInstance().getReference("Mes activites").child(title)
                 .setValue(dataClass).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
@@ -174,7 +180,7 @@ public class UploadActivity extends AppCompatActivity implements TimePickerDialo
                     public void onFailure(@NonNull Exception e) {
                         Toast.makeText(UploadActivity.this, e.getMessage().toString(), Toast.LENGTH_SHORT).show();
                     }
-                });
+                });   */
 
 }
 

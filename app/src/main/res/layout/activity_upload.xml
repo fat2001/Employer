@@ -35,13 +35,13 @@
 
 
             <EditText
-                android:id="@+id/uploadTopic"
+                android:id="@+id/uploadsujet"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/lavender_border"
                 android:gravity="start|center_vertical"
-                android:hint="Enter topic name"
+                android:hint="Enter sujet"
                 android:padding="16dp"
                 android:textColor="@color/lavender" />
 

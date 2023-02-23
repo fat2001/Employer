@@ -27,7 +27,17 @@
         android:padding="8dp"
         android:layout_marginRight="10dp"
         android:scaleType="fitXY"
-        android:src="@drawable/upload" />
+        android:src="@drawable/annonce" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detaildate"
+        android:text="Title"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="15dp"
+        android:textSize="24sp"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/lavender"/>
 
     <TextView
         android:id="@+id/detailDesc"

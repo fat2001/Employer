@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -18,7 +19,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
 public class DetailActivity extends AppCompatActivity {
-    TextView detailDesc, detailTitle;
+    TextView detailDesc, detailTitle,detaildate;
     ImageView detailImage;
    /* FloatingActionButton deleteButton;
     String key = "";
@@ -28,21 +29,27 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-
+        Activite e =(Activite) getIntent().getSerializableExtra("Activite");
+        Log.d("ddsdsds",e.toString());
         detailDesc = findViewById(R.id.detailDesc);
+        detaildate= findViewById(R.id.detaildate);
         detailImage = findViewById(R.id.detailImage);
         detailTitle = findViewById(R.id.detailTitle);
+        detailTitle.setText(e.getSujet());
+        detailDesc.setText(e.getDesc());
+        detaildate.setText(e.getDate());
        // deleteButton=findViewById(R.id.deleteButton);
-
+       /*
         Bundle bundle = getIntent().getExtras();
         if (bundle != null){
             detailDesc.setText(bundle.getString("Description"));
             detailTitle.setText(bundle.getString("Title"));
-          /*  key = bundle.getString("Key");
+            key = bundle.getString("Key");
             imageUrl = bundle.getString("Image");*/
 
-            Glide.with(this).load(bundle.getString("Image")).into(detailImage);
-        }
+      //      Glide.with(this).load(bundle.getString("Image")).into(detailImage);
+     //   }
+
        /* deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

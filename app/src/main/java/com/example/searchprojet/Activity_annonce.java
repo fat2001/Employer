@@ -24,8 +24,8 @@ static Anonce_adapter adapter;
         //Anonce_adapter adapter = new Anonce_adapter(, this);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 1, RecyclerView.VERTICAL,false));
         // recyclerView.setAdapter(adapter);
-      //  con.getallactivity(this);
-        con.getmesactivity(1,this);
+       con.getallactivity(this);
+       // con.getmesactivity(1,this);
 
 
 
