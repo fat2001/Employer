@@ -158,9 +158,9 @@ public class UploadActivity extends AppCompatActivity implements TimePickerDialo
     public void uploadData(){
         String sujet = uploadTopic.getText().toString();
         String desc = uploadDesc.getText().toString();
-        String lang = uploadLieu.getText().toString();
-        DataClass dataClass = new DataClass(sujet, desc, lang, imageURL);
-        Activite act1 = new Activite(edittextDate.getText().toString(),editTextTime.getText().toString(),sujet,lang,desc,imageURL);
+        String lieu = uploadLieu.getText().toString();
+        DataClass dataClass = new DataClass(sujet, desc, lieu, imageURL);
+        Activite act1 = new Activite(edittextDate.getText().toString(),editTextTime.getText().toString(),sujet,lieu,desc,imageURL);
         Log.d("sssss",act1.toString());
         Connecxion connecxion = new Connecxion();
         connecxion.addActivite(14,act1);

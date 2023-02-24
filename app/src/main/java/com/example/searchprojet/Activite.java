@@ -51,6 +51,7 @@ public class Activite implements Serializable {
         this.sujet = sujet;
         this.lieu = lieu;
         this.img = img;
+        this.desc = descr;
     }
 
 
