@@ -3,16 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_margin="15dp"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundbg"
     tools:context=".Activity_annonce">
     <androidx.appcompat.widget.SearchView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/border"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_height="wrap_content"/>
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:id="@+id/receyclerannonce"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_height="wrap_content">
     </androidx.recyclerview.widget.RecyclerView>
 

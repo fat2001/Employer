@@ -6,6 +6,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
+    android:background="@drawable/backgroundbg"
 tools:context=".HomeFragment">
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -38,7 +39,7 @@ tools:context=".HomeFragment">
         android:id="@+id/ann1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
+        android:layout_marginStart="160dp"
         android:layout_marginTop="4dp"
         android:text="Annonces"
         android:textColor="@color/black"
@@ -151,7 +152,7 @@ tools:context=".HomeFragment">
         android:id="@+id/txtrap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
+        android:layout_marginStart="160dp"
         android:text="Rapports"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -262,7 +263,6 @@ tools:context=".HomeFragment">
         android:layout_height="250dp"
         android:id="@+id/row3"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp"
         android:padding="10dp"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -275,20 +275,21 @@ tools:context=".HomeFragment">
             android:layout_weight="1"
             app:cardElevation="20dp"
             app:cardCornerRadius="20dp">
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#8A9A5B	"
-                >
+                android:background="#8A9A5B	">
+
                 <TextView
+                    android:id="@+id/pharmName5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/pharmName5"
-                    android:text="Total"
-                    android:textSize="35sp"
-                    android:textColor="@color/black"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginTop="5dp"
-                    android:layout_centerHorizontal="true" />
+                    android:text="Total"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
 
                 <LinearLayout
                     android:id="@+id/L3"
@@ -309,7 +310,7 @@ tools:context=".HomeFragment">
                         <RelativeLayout
                             android:id="@+id/R1_L3"
                             android:layout_width="match_parent"
-                            android:layout_height="159dp">
+                            android:layout_height="match_parent">
 
                             <TextView
                                 android:id="@+id/txttoan"
