@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TousAnnonces"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TousAnnonces1"
+            android:layout_marginStart="0dp"
+            android:layout_width="160dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:background="@color/greenbg"
+            android:textSize="16dp"
+            android:text="Tous les annonces" />
+
+        <TextView
+            android:id="@+id/MesAnnonces1"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/border_color"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mes annonces" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/backgroundbg">
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:background="@drawable/border"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/receyclerannonce"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
