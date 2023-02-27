@@ -16,7 +16,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
         app:cardCornerRadius="30dp"
-        android:paddingBottom="50dp"
+        android:paddingBottom="90dp"
         app:cardElevation="20dp">
 
         <LinearLayout
@@ -40,92 +40,93 @@
                 android:id="@+id/uploadsujet"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/lavender_border"
                 android:gravity="start|center_vertical"
                 android:hint="Enter sujet"
                 android:padding="16dp"
-                android:textColor="@color/lavender" />
+                android:textColor="@color/black" />
 
             <EditText
                 android:id="@+id/uploadDesc"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/lavender_border"
                 android:gravity="start|center_vertical"
                 android:hint="Enter description"
                 android:padding="16dp"
-                android:textColor="@color/lavender" />
+                android:textColor="@color/black" />
 
             <EditText
                 android:id="@+id/uploadLieu"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/lavender_border"
                 android:gravity="start|center_vertical"
                 android:hint="Enter le Lieu"
                 android:padding="16dp"
-                android:textColor="@color/lavender" />
+                android:textColor="@color/black" />
 
             <Spinner
                 android:id="@+id/spinner"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/lavender_border"
                 android:gravity="start|center_vertical"
                 android:padding="16dp"
-                android:textColor="@color/lavender" />
+                android:textColor="@color/black" />
 
             <EditText
                 android:id="@+id/editTextDate"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/lavender_border"
                 android:drawableStart="@drawable/ic_baseline_date_range_24"
                 android:gravity="start|center_vertical"
                 android:hint="choisir une date"
                 android:padding="16dp"
-                android:textColor="@color/lavender" />
+                android:textColor="@color/black" />
 
             <EditText
                 android:id="@+id/editTextTime"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/lavender_border"
                 android:drawableStart="@drawable/ic_baseline_access_time_24"
                 android:gravity="start|center_vertical"
                 android:hint="choisir une heure"
                 android:padding="16dp"
-                android:textColor="@color/lavender" />
+                android:textColor="@color/black" />
 
             <Spinner
                 android:id="@+id/service"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/lavender_border"
                 android:gravity="start|center_vertical"
                 android:padding="16dp"
-                android:textColor="@color/lavender" />
+                android:textColor="@color/black" />
 
             <ImageView
                 android:id="@+id/uploadImage"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginTop="10dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/uploadimg" />
 
             <Button
                 android:id="@+id/saveButton"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="20dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
                 android:text="Conformer"
                 android:textSize="18sp"
                 app:cornerRadius="20dp" />
