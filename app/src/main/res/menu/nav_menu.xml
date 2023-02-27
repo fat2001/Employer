@@ -12,6 +12,7 @@
             android:id="@+id/nav_Annonce"
             android:icon="@drawable/annancebg"
             android:title="Annonce"/>
+
         <item
             android:id="@+id/nav_Archive"
             android:icon="@drawable/archivebg"
