@@ -14,6 +14,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -26,6 +28,7 @@ import java.util.ArrayList;
 
 public class Connecxion {
     FirebaseFirestore fr = FirebaseFirestore.getInstance();
+
     public void Login(String email, String password, Context context){
         if (fr!=null){
             CollectionReference usersRef = fr.collection("data").document("user").collection("users");
@@ -41,7 +44,7 @@ public class Connecxion {
                         User user = new User();
                         QuerySnapshot querySnapshot = task.getResult();
                         if (querySnapshot.isEmpty()) {
-                            Toast.makeText(context, "Makaynch had luser", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context, "Utilisateur n'existe pas", Toast.LENGTH_SHORT).show();
                         }
                         else {
                             DocumentSnapshot documentSnapshot = querySnapshot.getDocuments().get(0);

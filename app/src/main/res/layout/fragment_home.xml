@@ -16,8 +16,8 @@ tools:context=".HomeFragment">
 
     <TextView
         android:id="@+id/dashboard"
-        android:layout_width="206dp"
-        android:layout_height="54dp"
+        android:layout_width="160dp"
+        android:layout_height="32dp"
         android:text=""
         android:textColor="@color/black"
         android:textSize="26sp"
@@ -385,6 +385,7 @@ tools:context=".HomeFragment">
 
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

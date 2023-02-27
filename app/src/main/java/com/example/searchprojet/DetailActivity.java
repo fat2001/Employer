@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import android.os.Bundle;
 import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -19,7 +19,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
 public class DetailActivity extends AppCompatActivity {
-    TextView detailDesc, detailTitle,detaildate;
+    TextView detailDesc;
     ImageView detailImage;
    /* FloatingActionButton deleteButton;
     String key = "";
@@ -29,15 +29,17 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-        Activite e =(Activite) getIntent().getSerializableExtra("Activite");
-        Log.d("ddsdsds",e.toString());
+
         detailDesc = findViewById(R.id.detailDesc);
-        detaildate= findViewById(R.id.detaildate);
         detailImage = findViewById(R.id.detailImage);
-        detailTitle = findViewById(R.id.detailTitle);
-        detailTitle.setText(e.getSujet());
-        detailDesc.setText(e.getDesc());
-        detaildate.setText(e.getDate());
+
+
+
+
+        String url="https://firebasestorage.googleapis.com/v0/b/application-8a661.appspot.com/o/Android%20Images%2F394598981?alt=media&token=292b8334-15f3-437e-b1e9-3abd2b6a2e61";//Retrieved url as mentioned above
+
+        Glide.with(getApplicationContext()).load(url).into(detailImage);
+
        // deleteButton=findViewById(R.id.deleteButton);
        /*
         Bundle bundle = getIntent().getExtras();
