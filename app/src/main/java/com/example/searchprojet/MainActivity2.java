@@ -48,14 +48,15 @@ public class MainActivity2 extends AppCompatActivity  implements NavigationView.
     public boolean onNavigationItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.nav_home:
-              /*  getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();*/
-                Intent intent = new Intent(MainActivity2.this,DetailActivity.class);
-                startActivity(intent);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
                 break;
-            case R.id.nav_settings:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingFragment()).commit();
-               // Intent intent2 = new Intent(MainActivity2.this,DetailActivity.class);
-                //startActivity(intent2);
+            case R.id.nav_Annonce:
+                Intent intent1=new Intent(MainActivity2.this,ResponsableAnnonces.class);
+                startActivity(intent1);
+                break;
+            case  R.id.nav_Archive:
+                Intent intent2=new Intent(MainActivity2.this,ArchiveActivity.class);
+                startActivity(intent2);
                 break;
 /*
             case R.id.nav_about:
@@ -64,11 +65,8 @@ public class MainActivity2 extends AppCompatActivity  implements NavigationView.
 
  */
             case R.id.nav_logout:
-                Intent intent1 = new Intent(MainActivity2.this,loginActivity.class);
-                startActivity(intent1);
                 Toast.makeText(this, "Logout!", Toast.LENGTH_SHORT).show();
                 break;
-
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
