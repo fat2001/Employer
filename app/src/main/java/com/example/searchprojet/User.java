@@ -123,19 +123,19 @@ public class User implements Serializable {
 
 
 
-@Override
-public String toString() {
+    @Override
+    public String toString() {
         return "User{" +
-        "idUser=" + idUser +
-        ", prenom='" + prenom + '\'' +
-        ", nom='" + nom + '\'' +
-        ", telephone=" + telephone +
-        ", email='" + email + '\'' +
-        ", password='" + password + '\'' +
-        ", img='" + img + '\'' +
-        ", nomService='" + service + '\'' +
-        ", idRole=" + idRole +
-        '}';
-        }
+                "idUser=" + idUser +
+                ", prenom='" + prenom + '\'' +
+                ", nom='" + nom + '\'' +
+                ", telephone=" + telephone +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", img='" + img + '\'' +
+                ", nomService='" + service + '\'' +
+                ", idRole=" + idRole +
+                '}';
+    }
 
-        }
+}

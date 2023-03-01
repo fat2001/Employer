@@ -92,7 +92,7 @@ public class UploadActivity extends AppCompatActivity implements TimePickerDialo
 
 
 
-            uploadImage = findViewById(R.id.uploadImage);
+        uploadImage = findViewById(R.id.uploadImage);
         uploadDesc = findViewById(R.id.uploadDesc);
         uploadTopic = findViewById(R.id.uploadsujet);
         uploadLieu = findViewById(R.id.uploadLieu);
@@ -113,14 +113,6 @@ public class UploadActivity extends AppCompatActivity implements TimePickerDialo
                     }
                 }
         );
-        saveButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(UploadActivity.this,DetailActivity.class);
-                startActivity(intent);
-
-            }
-        });
         uploadImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -134,7 +126,7 @@ public class UploadActivity extends AppCompatActivity implements TimePickerDialo
             @Override
             public void onClick(View view) {
                 uploadData();
-               saveData();
+                //   saveData();
             }
         });
     }
@@ -174,7 +166,7 @@ public class UploadActivity extends AppCompatActivity implements TimePickerDialo
         connecxion.addActivite(14,act1);
 
 
-       FirebaseDatabase.getInstance().getReference("Mes activites").child("Activité info")
+      /*  FirebaseDatabase.getInstance().getReference("Mes activites").child(title)
                 .setValue(dataClass).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
@@ -188,9 +180,9 @@ public class UploadActivity extends AppCompatActivity implements TimePickerDialo
                     public void onFailure(@NonNull Exception e) {
                         Toast.makeText(UploadActivity.this, e.getMessage().toString(), Toast.LENGTH_SHORT).show();
                     }
-                });
+                });   */
 
-}
+    }
 
 
 
@@ -220,4 +212,4 @@ public class UploadActivity extends AppCompatActivity implements TimePickerDialo
         String time=hourOfDay + ":" +minute;
         editTextTime.setText(time);
     }
-    }
+}
