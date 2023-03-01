@@ -1,6 +1,6 @@
 package com.example.searchprojet;
 
-public class HelperClass {
+public class loginclass {
     String name, email, username, password;
     public String getName() {
         return name;
@@ -26,12 +26,12 @@ public class HelperClass {
     public void setPassword(String password) {
         this.password = password;
     }
-    public HelperClass(String name, String email, String username, String password) {
+    public loginclass(String name, String email, String username, String password) {
         this.name = name;
         this.email = email;
         this.username = username;
         this.password = password;
     }
-    public HelperClass() {
+    public loginclass() {
     }
 }
