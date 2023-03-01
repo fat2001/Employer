@@ -1,6 +1,6 @@
 package com.example.searchprojet;
 
-import static com.example.searchprojet.Activity_annonce.recyclerView;
+import static com.example.searchprojet.ResponsableAnnonces.recyclerView;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -14,8 +14,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -28,7 +26,6 @@ import java.util.ArrayList;
 
 public class Connecxion {
     FirebaseFirestore fr = FirebaseFirestore.getInstance();
-
     public void Login(String email, String password, Context context){
         if (fr!=null){
             CollectionReference usersRef = fr.collection("data").document("user").collection("users");
@@ -44,7 +41,7 @@ public class Connecxion {
                         User user = new User();
                         QuerySnapshot querySnapshot = task.getResult();
                         if (querySnapshot.isEmpty()) {
-                            Toast.makeText(context, "Utilisateur n'existe pas", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context, "Makaynch had luser", Toast.LENGTH_SHORT).show();
                         }
                         else {
                             DocumentSnapshot documentSnapshot = querySnapshot.getDocuments().get(0);
@@ -52,7 +49,7 @@ public class Connecxion {
                             String usernom = documentSnapshot.get("nom").toString();
                             user.setIdUser(Integer.valueOf(userId));
                             user.setNom(usernom);
-                            Intent intent = new Intent(context,Activity_annonce.class);
+                            Intent intent = new Intent(context,ResponsableAnnonces.class);
                             intent.putExtra("user",user);
                             context.startActivity(intent);
                         }
@@ -125,7 +122,7 @@ public class Connecxion {
                                             if (documentactivite.get("date") != null && documentactivite.get("sujet") != null && documentactivite.get("lieu") != null) {
 
                                                 Activite activite = new Activite(documentactivite.get("date").toString(), documentactivite.get("sujet").toString(), documentactivite.get("lieu").toString());
-                                                    activite.setNomDesc(documentactivite.get("desc").toString());
+                                                activite.setNomDesc(documentactivite.get("desc").toString());
                                                 activites.add(activite);
                                                 adapter.notifyDataSetChanged();
                                                 Log.d("anchof hadchi ",activite.toString());
